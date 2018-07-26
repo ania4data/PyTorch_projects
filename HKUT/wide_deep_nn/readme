@@ -1,0 +1,1 @@
+adding more layer os NN for Diabete detection, 80% accuracy at most, with more layer of net work, 2,3 layer were enough, cheking multiple loss functions and optimizer, settled on Adam and BCELoss, can sense the initilization dependency that shows up run to run,
