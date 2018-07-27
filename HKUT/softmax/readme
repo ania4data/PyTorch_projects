@@ -1,0 +1,21 @@
+cross entroy try out (logoftmax+NNLoss)   log(y_hat)~loss(x,class)=-Log(exp(x[class])/sum(x_class))   , sum across all class values softtmax, log -> log softmax
+D(y_hat,y)=-y*log(y_hat)
+class:y (more like one hot coded) with multiplied
+
+Y = Variable(torch.LongTensor([0]), requires_grad=False)   Y number of class -1     , max value 2, from 0 ,1,2 (3 class)
+Y_pred1 = Variable(torch.Tensor([[2.0, 1.0, 0.1]]))
+Y_pred2 = Variable(torch.Tensor([[1.0, 0.1, 2.0]]))
+l1 = loss(Y_pred1, Y)
+l2 = loss(Y_pred2, Y)
+print("PyTorch Loss1 = ", l1.data, 
+    "\nPyTorch Loss2=", l2.data)
+PyTorch Loss1 =  tensor(0.4170) 
+PyTorch Loss2= tensor(1.4170)
+
+if Y=1
+PyTorch Loss1 =  tensor(1.4170) 
+PyTorch Loss2= tensor(2.3170)
+
+if Y=2
+PyTorch Loss1 =  tensor(2.3170) 
+PyTorch Loss2= tensor(0.4170)
