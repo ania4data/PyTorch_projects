@@ -1,2 +1,5 @@
 testing the CIFAR10 with or without convolution, at most only using linear FC can do overfit on train and get to ~50% on test, after 50 epochs, with conv (custom) 2 conv, and
 3 fc with dropout you get the 66% after 10 epochs.
+
+using dropout generally show undefitting in accuracy of the training but in eval or test, accuracy recovered, dropout (like ensemble of mthods). SGD works best vs. Adam for 
+CIFAR10 !
