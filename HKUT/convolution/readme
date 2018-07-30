@@ -3,3 +3,5 @@ testing the CIFAR10 with or without convolution, at most only using linear FC ca
 
 using dropout generally show undefitting in accuracy of the training but in eval or test, accuracy recovered, dropout (like ensemble of mthods). SGD works best vs. Adam for 
 CIFAR10 !
+
+CIFAR10 w/o and w/ inception on test data (more fc with dropout) 66 -> to 70% improvement
