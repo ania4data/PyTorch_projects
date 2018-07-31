@@ -1,0 +1,14 @@
+
+Getting 10% of data on train in folder as train:
+
+    cd directory/containing/c_0c_1...etc directories
+    mkdir -p train val
+    for i in {0..37}; do mkdir val/c_$i; done
+    mv c_* train
+
+    cd train
+    find . -iname *.jpg | shuf | head -n 2100| xargs -I{} mv {} ../val/{}
+    
+    https://www.crowdai.org/articles/torch-tutorial-for-plantvillage-challenge?article_section_id=5
+    
+    
