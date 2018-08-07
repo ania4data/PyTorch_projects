@@ -4,6 +4,9 @@ loss doesn't drop. using abs() of two output of siameye 4096 each when substract
 running with Lecunn contrast loss. Not following 1) and 4) at this point, with At&T sample not working. using 2) and 3) but with koch network 
 except the fc up to pure 4096 loss drop is better, margin for now at 2.0
 
+using batch norm is crusical ended up using 4096 with few fc to 5 then use contrast loss , margin 2 ok, tried 1 and 5, not good. 
+conv layers are with relu and batch norm and dropout 0.2, still keep fc only with relu, need try out if dropout in fc help
+
 1)https://www.cs.cmu.edu/~rsalakhu/papers/oneshot1.pdf
 
 
