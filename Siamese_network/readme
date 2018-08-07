@@ -13,3 +13,4 @@ conv layers are with relu and batch norm and dropout 0.2, still keep fc only wit
 2)http://yann.lecun.com/exdb/publis/pdf/hadsell-chopra-lecun-06.pdf
 3)https://hackernoon.com/facial-similarity-with-siamese-networks-in-pytorch-9642aa9db2f7
 4)https://sorenbouma.github.io/blog/oneshot/
+5)https://www.cl.cam.ac.uk/research/dtg/attarchive/facesataglance.html     #At&t faces
