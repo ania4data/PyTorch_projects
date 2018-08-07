@@ -1,1 +1,12 @@
-https://hackernoon.com/facial-similarity-with-siamese-networks-in-pytorch-9642aa9db2f7
+original paper doesn't converge well, no discussion on dropout or batch norm on original Koch et.al paper.
+loss doesn't drop. using abs() of two output of siameye 4096 each when substracted. and fed into sigmoid with BCEloss.
+
+running with Lecunn contrast loss. Not following 1) and 4) at this point, with At&T sample not working. using 2) and 3) but with koch network 
+except the fc up to pure 4096 loss drop is better, margin for now at 2.0
+
+1)https://www.cs.cmu.edu/~rsalakhu/papers/oneshot1.pdf
+
+
+2)http://yann.lecun.com/exdb/publis/pdf/hadsell-chopra-lecun-06.pdf
+3)https://hackernoon.com/facial-similarity-with-siamese-networks-in-pytorch-9642aa9db2f7
+4)https://sorenbouma.github.io/blog/oneshot/
