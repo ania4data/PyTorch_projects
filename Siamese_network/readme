@@ -8,8 +8,9 @@ using batch norm is crusical ended up using 4096 with few fc to 5 then use contr
 conv layers are with relu and batch norm and dropout 0.2, still keep fc only with relu, need try out if dropout in fc help (mod4)
 
 *******************************************************
-08/08/18 what actually worked
-
+*******************************************************
+08/08/18 what actually worked, siameye1-copy-mod7_omniglot-dataloader_ori_network.ipynb
+*******************************************************
 I ended up following the paper, all conv the same as before but removed dropout at end of each conv, kept also batch norm
 one linear from 9216 to 4096, then sigmoin on for each of the two output, get F.L1loss within the forward to get delta of 4096, then take it 
 to another linear from 4096 to 1.  out put is batchsize*1. 
@@ -34,6 +35,8 @@ test set is remaining 20 language with alphabet mixed in together 20*(20-30)=  ~
 
 each alphabet has 20 letter
 
+********************************************************
+********************************************************
 
 
 1)https://www.cs.cmu.edu/~rsalakhu/papers/oneshot1.pdf
