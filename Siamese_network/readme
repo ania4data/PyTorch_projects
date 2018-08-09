@@ -33,7 +33,7 @@ pulling down the loss individualy.
 
 It is not clear to me for other methods whether the issue was contrast loss function, last layers of network or dropout?
 
-can try the model.pth on at&t photos as well.
+accuracy should not be bad , guessing 80-85%. can also try the model.pth on at&t photos as well.
 reference (5) useful.
 
 the train set is 30 language that their alphabet mixed in together 30*(20-30) = ~900 classes (~900 alphabet)
