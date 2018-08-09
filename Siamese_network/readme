@@ -44,6 +44,15 @@ each alphabet has 20 letter
 ********************************************************
 ********************************************************
 
+siameye1-copy-mod7_omniglot-dataloader_ori_network-acc
+
+added accuracy, updated the dataloader to work on laptop and also get the actual label of images.
+
+Train accuracy:  95.4%
+Test accuracy:  70.4%   much lower than paper!, seems is the consistent observation in other blogs/github
+
+wonder in 100 epochs was not enough!
+********************************************************
 
 1)https://www.cs.cmu.edu/~rsalakhu/papers/oneshot1.pdf
 2)http://yann.lecun.com/exdb/publis/pdf/hadsell-chopra-lecun-06.pdf
